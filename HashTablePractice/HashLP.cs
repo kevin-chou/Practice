@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HashTablePractice
+﻿namespace HashTablePractice
 {
     /// <summary>
     /// A simple hash table implementation that uses linear probing to handle collisions.
@@ -105,7 +103,7 @@ namespace HashTablePractice
             // continue search using linear probing if element not found
             for (int i = 0; i < tableSize; i++)
             {
-                // return value if key found
+                // delete element if key is found
                 if (table[index] != null && table[index].Key.Equals(key))
                 {
                     table[index] = null;
